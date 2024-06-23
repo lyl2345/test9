@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ewai.css">
+    <link rel="stylesheet" href="./css5/iconfont.css">
+</head>
+<body>
+  <nav class="navbar">  
+    <ul class="navbar-list">  
+        <li class="navbar-item active"><a href="5.html">“何方神圣”</a></li>  
+        <li class="navbar-item"><a href="er.html">“新宠儿”</a></li>  
+        <li class="navbar-item"><a href="san2.html">营养宝库</a></li>  
+        <li class="navbar-item"><a href="si2.html">快捷却藏“劫”</a></li>  
+        <li class="navbar-item"><a href="wu.html">筑起“防火墙”</a></li>  
+        <li class="navbar-item"><a href="ewai.html">ewai</a></li>  
+        <li class="navbar-item"><a href="dianzan.html">dianzan</a></li>  
+    </ul>  
+</nav>  
+<div class="i">
+  <i class="iconfont icon-a-appround15" id="fanhui-btn" onclick="goToHomePage()"></i>
+</div>
+  <div class="econtainer">
+    <div id="eslide">
+        <div class="eitem" style="background-image:url('./img/美食1.webp')"></div>
+        <div class="eitem" style="background-image:url('./img/美食2.jpeg')"></div>
+        <div class="eitem" style="background-image:url('./img/美食3.jpeg')"></div>
+        <div class="eitem" style="background-image:url('./img/美食4.webp')"></div>
+        <div class="eitem" style="background-image:url('./img/美食5.jpg')"></div>
+        <div class="eitem" style="background-image:url('./img/美食6.jpeg')"></div>
+    </div>
+  </div>
+    <div class="ebuttons">
+        <div class="eleft">
+            < Prev</div>
+                <div class="ecenter">下载壁纸</div>
+                <div class="eright">Next ></div>
+    </div>
+
+
+<div class="love">
+  <input id="switch" type="checkbox">
+  <label class="love-heart" for="switch">
+    <i class="left"></i>
+    <i class="right"></i>
+    <i class="bottom"></i>
+    <div class="round"></div>
+  </label>
+</div>
+    <script>
+        const leftBtn = document.querySelector(".ebuttons .eleft")
+const rightBtn = document.querySelector(".ebuttons .eright")
+const slide = document.querySelector("#eslide")
+let openClick = true // 节流处理 (保证动画执行过程，按钮不被重复点击)
+
+leftBtn.addEventListener("click", () => {
+  if (openClick) {
+    openClick = false // 触发点击后，禁用按钮
+    const items = document.querySelectorAll(".eitem")
+    slide.prepend(items[items.length - 1])
+
+    setTimeout(() => openClick = true, 1000) // 1s 再开放按钮的点击
+  }
+})
+rightBtn.addEventListener("click", () => {
+  if (openClick) {
+    openClick = false
+    const items = document.querySelectorAll(".eitem")
+    slide.appendChild(items[0])
+
+    setTimeout(() => openClick = true, 1000)
+  }
+})
+        function goToHomePage() {  
+    // 使用 window.location.href 来设置要导航到的 URL  
+    window.location.href = "/"; // 假设首页的 URL 是根目录 "/"  
+    // 如果首页的 URL 不是根目录，你需要替换为实际的 URL，比如 "http://example.com" 或 "/index.html"  
+}
+
+document.getElementById('switch').addEventListener('change', function() {  
+            if (this.checked) {  
+                // 如果复选框被选中，则设置一个3秒后的跳转  
+                setTimeout(function() {  
+                    window.location.href = 'https://www.example.com'; // 替换为你想要跳转的页面的URL  
+                }, 1000); // 3000毫秒 = 3秒  
+            }  
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./wu.css">
+    <link rel="stylesheet" href="./css5/iconfont.css">
+</head>
+<body>
+    <nav class="navbar">  
+        <ul class="navbar-list">  
+            <li class="navbar-item active"><a href="5.html">“何方神圣”</a></li>  
+            <li class="navbar-item"><a href="er.html">“新宠儿”</a></li>  
+            <li class="navbar-item"><a href="san2.html">营养宝库</a></li>  
+            <li class="navbar-item"><a href="si2.html">快捷却藏“劫”</a></li>  
+            <li class="navbar-item"><a href="wu.html">筑起“防火墙”</a></li>  
+            <li class="navbar-item"><a href="ewai.html">ewai</a></li>  
+            <li class="navbar-item"><a href="dianzan.html">dianzan</a></li>  
+        </ul>  
+    </nav> 
+    <div class="i">
+        <i class="iconfont icon-a-appround15" id="fanhui-btn" onclick="goToHomePage()"></i>
+    </div> 
+    <div id="dabiao5">
+        <img src="./img/动态大标题/动态大标题/5.gif" width="1000" alt="">
+    </div>
+    <div id="xiaobiao5">
+        <img src="./img/横线小标题.jpg" width="400" alt="">
+        <img src="./img/小标题/小标题/政策.png" width="500" height="119" alt="">
+        <img src="./img/横线小标题.jpg" width="400"  alt="">
+    </div>
+    <div id="shao">
+        <img class="shaocha" src="./img/图片1.png" width="250" width="250" alt="">
+        <div class="cetu">
+            <iframe src="https://dycharts.com/xshow/index.html?id=c_c884a7a89bac5394f3681cd10ae3ce49" width="650" height="550" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <p id="wen">
+            <sapn>民以食为天，食以安为先。</span>为了让百姓吃的更加放心，企业和政府都在不断做出努力。从企业角度来说，预制菜企业严格执行食品安全标准，逐步建立健全的质检体系，确保产品的安全、卫生、营养和口感。其次，随着科技的进步，预制菜生产技术也在不断创新。企业正不断研发新的加工技术和设备，提高预制菜的生产效率和质量。
+            今年，市场监管总局等六部门21日联合发布<span>《关于加强预制菜食品安全监管 促进产业高质量发展的通知》</span>，首次明确预制菜定义和范围，强化预制菜食品安全监管，明确了推动预制菜食品安全标准和质量标准体系建设的方向。如今，小小的预制菜串联起田间地头和居民餐桌，既关联着经济增长，也关联着人民群众对美好生活的向往，我们相信，在未来，预制菜会成为主流，预制菜的向好发展正给大家带来着无限希望。　
+        </p>
+        <img class="shaocha2" src="./img/图片2.png" width="250" width="250" alt=""> 
+    </div>
+    <div class="love">
+        <input id="switch" type="checkbox">
+        <label class="love-heart" for="switch">
+          <i class="left"></i>
+          <i class="right"></i>
+          <i class="bottom"></i>
+          <div class="round"></div>
+        </label>
+    </div>
+    <script>
+        function goToHomePage() {  
+    // 使用 window.location.href 来设置要导航到的 URL  
+    window.location.href = "/"; // 假设首页的 URL 是根目录 "/"  
+    // 如果首页的 URL 不是根目录，你需要替换为实际的 URL，比如 "http://example.com" 或 "/index.html"  
+}
+document.getElementById('switch').addEventListener('change', function() {  
+            if (this.checked) {  
+                // 如果复选框被选中，则设置一个3秒后的跳转  
+                setTimeout(function() {  
+                    window.location.href = 'https://www.example.com'; // 替换为你想要跳转的页面的URL  
+                }, 1000); // 3000毫秒 = 3秒  
+            }  
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./si2.css">
+    <link rel="stylesheet" href="./css5/iconfont.css">
+</head>
+<body>
+    <nav class="navbar">  
+        <ul class="navbar-list">  
+            <li class="navbar-item active"><a href="5.html">“何方神圣”</a></li>  
+            <li class="navbar-item"><a href="er.html">“新宠儿”</a></li>  
+            <li class="navbar-item"><a href="san2.html">营养宝库</a></li>  
+            <li class="navbar-item"><a href="si2.html">快捷却藏“劫”</a></li>  
+            <li class="navbar-item"><a href="wu.html">筑起“防火墙”</a></li>  
+            <li class="navbar-item"><a href="ewai.html">ewai</a></li>  
+            <li class="navbar-item"><a href="dianzan.html">dianzan</a></li>  
+        </ul>  
+    </nav>
+    <div class="i">
+        <i class="iconfont icon-a-appround15" id="fanhui-btn" onclick="goToHomePage()"></i>
+    </div> 
+    <div id="dabiao4">
+        <img src="./img/动态大标题/动态大标题/4.gif" width="1000" alt="">
+    </div>
+    <div class="sibao">
+        <div id="sii">
+            <div class="sann">
+                <iframe src="https://dycharts.com/xshow/index.html?id=c_a70f13ea680bcad00efdf4cf130bfd5c" width="400" height="340" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="sann1">
+                <iframe src="https://dycharts.com/xshow/index.html?id=c_0df9369b7cdabbbefd006455625e81a2" width="400" height="340" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <p id="cang">
+            然而，预制菜在为我们的生活提供营养和便捷的同时，也存在着一些问题。部分预制菜可能存在<span>添加剂过多，生产环境不卫生，营养成分损耗</span>等问题。
+            近年来，预制菜产业发展迅猛，大量预制菜企业涌入市场，为行业注入了活力。当然，新领域也会面临提升品质、规范发展等问题，部分预制菜企业出现经营异常和引起法律诉讼等问题，这体现出我国预制菜行业缺乏统一的标准和相关监管政策。除了企业要加强自律，加大创新，政府相关部门也要细化相关产品标准体系、操作规范流程，为消费者的健康安全，也为新赛道的加快发展把好“安全门”。
+        </p>
+    </div>
+
+    <div class="love">
+        <input id="switch" type="checkbox">
+        <label class="love-heart" for="switch">
+          <i class="left"></i>
+          <i class="right"></i>
+          <i class="bottom"></i>
+          <div class="round"></div>
+        </label>
+    </div>
+
+    <script>
+        function goToHomePage() {  
+    // 使用 window.location.href 来设置要导航到的 URL  
+    window.location.href = "/"; // 假设首页的 URL 是根目录 "/"  
+    // 如果首页的 URL 不是根目录，你需要替换为实际的 URL，比如 "http://example.com" 或 "/index.html"  
+}
+
+document.getElementById('switch').addEventListener('change', function() {  
+            if (this.checked) {  
+                // 如果复选框被选中，则设置一个3秒后的跳转  
+                setTimeout(function() {  
+                    window.location.href = 'https://www.example.com'; // 替换为你想要跳转的页面的URL  
+                }, 1000); // 3000毫秒 = 3秒  
+            }  
+        });
+
+    </script>
+</body>
+</html>

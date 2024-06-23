@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "40728410",
+      "name": "房子首页主页",
+      "font_class": "a-appround15",
+      "unicode": "e92f",
+      "unicode_decimal": 59695
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./san2.css">
+    <link rel="stylesheet" href="./css5/iconfont.css">
+</head>
+<body>
+    <nav class="navbar">  
+        <ul class="navbar-list">  
+            <li class="navbar-item active"><a href="5.html">“何方神圣”</a></li>  
+            <li class="navbar-item"><a href="er.html">“新宠儿”</a></li>  
+            <li class="navbar-item"><a href="san2.html">营养宝库</a></li>  
+            <li class="navbar-item"><a href="si2.html">快捷却藏“劫”</a></li>  
+            <li class="navbar-item"><a href="wu.html">筑起“防火墙”</a></li>  
+            <li class="navbar-item"><a href="ewai.html">ewai</a></li>  
+            <li class="navbar-item"><a href="dianzan.html">dianzan</a></li>  
+        </ul>  
+    </nav> 
+    <div class="i">
+        <i class="iconfont icon-a-appround15" id="fnahui-btn" onclick="goToHomePage()"></i>
+    </div>
+    <div class="da">
+        <div id="dabiao3">
+            <img src="./img/动态大标题/动态大标题/3.gif" width="1200" height="300" alt="">
+        </div>
+        <img src="./img/插图4.png" width="250" width="250" alt="">
+    </div>
+    <div id="huo">
+        <div id="ci">
+            <img src="./img/必看三：营养.png" width="550" height="401" alt="">   
+        </div>
+        <p id="chi">
+            预制菜还有营养吗？吃预制菜健康吗？这是很多消费者关心的话题。“预制菜经过热加工处理后，流失的营养素主要是蔬菜中的维生素和少量的矿物质，膳食纤维没有很大损失。肉类产品只要是新鲜的、品质好的，加热后蛋白质流失也并不多。”
+            北京天坛医院临床营养科副主任医师许英霞说。事实上，有些预制菜甚至比新鲜烹饪的食物更有营养价值，如<span>蔬菜沙拉、鸡肉汤、烤三明治</span>等。这些预制菜中的配料通常是新鲜的蔬菜、水果、肉类和谷物等，而且经过合理的加工和搭配，可以提供人体所需的蛋白质、维生素、矿物质等营养素。
+        </p>
+    </div>
+
+    <div class="love">
+        <input id="switch" type="checkbox">
+        <label class="love-heart" for="switch">
+          <i class="left"></i>
+          <i class="right"></i>
+          <i class="bottom"></i>
+          <div class="round"></div>
+        </label>
+    </div>
+
+    <script>
+        function goToHomePage() {  
+    // 使用 window.location.href 来设置要导航到的 URL  
+    window.location.href = "/"; // 假设首页的 URL 是根目录 "/"  
+    // 如果首页的 URL 不是根目录，你需要替换为实际的 URL，比如 "http://example.com" 或 "/index.html"  
+}
+
+document.getElementById('switch').addEventListener('change', function() {  
+            if (this.checked) {  
+                // 如果复选框被选中，则设置一个3秒后的跳转  
+                setTimeout(function() {  
+                    window.location.href = 'https://www.example.com'; // 替换为你想要跳转的页面的URL  
+                }, 1000); // 3000毫秒 = 3秒  
+            }  
+        });
+
+        document.getElementById('switch').addEventListener('change', function() {  
+            if (this.checked) {  
+                // 如果复选框被选中，则设置一个3秒后的跳转  
+                setTimeout(function() {  
+                    window.location.href = 'https://www.example.com'; // 替换为你想要跳转的页面的URL  
+                }, 1000); // 3000毫秒 = 3秒  
+            }  
+        });
+
+    </script>
+</body>
+</html>
